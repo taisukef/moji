@@ -1,4 +1,4 @@
-import { describe, assert, it } from "./nodelikeassert.mjs"
+import { describe, assert, it } from "https://taisukef.github.io/denolib/nodelikeassert.mjs"
 
 import { moji } from "../docs/index.mjs"
 
