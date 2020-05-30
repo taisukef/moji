@@ -33,7 +33,7 @@ deno run test.mjs
 使い方
 ------
 
-###convert()
+### convert()
 
 `convert("変換種別)`
 
@@ -192,6 +192,15 @@ moji.addMojisyu({"HK", {
 これは、listだけで検索すると文字数に応じてパフォーマンスの劣化が予想されるためです。
 
 この辺りはFHconvertを参考にさせて頂いています。
+
+テスト
+------
+
+```bash
+cd test
+deno test
+```
+
 
 感謝
 ----
