@@ -1,11 +1,11 @@
-const map = require("./core.map");
+import { map } from "./core.map.mjs";
 
 /**
  * @param {string} str
  * @param {Mojisyu} filterMojisyu フィルタする文字種名
  * @return {Moji}
  */
-module.exports = function filter(str, filterMojisyu) {
+export const filter = function (str, filterMojisyu) {
     if (filterMojisyu.types.range) {
         str = rangeFilter(str, filterMojisyu);
     }

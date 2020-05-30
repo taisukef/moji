@@ -1,6 +1,6 @@
-const map = require("./core.map");
+import { map } from "./core.map.mjs";
 
-module.exports = function convert(str, fromMojisyu, toMojisyu) {
+const convert = function (str, fromMojisyu, toMojisyu) {
     if (fromMojisyu.types.range && toMojisyu.types.range) {
         str = rangeConvert(str, fromMojisyu, toMojisyu);
     }
@@ -59,3 +59,5 @@ function patternConvert(str, from, to) {
         });
     }).join("");
 }
+
+export { convert }

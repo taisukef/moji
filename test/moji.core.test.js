@@ -1,9 +1,6 @@
-const assert = require("assert");
-let moji = require("../dist/moji");
+import { describe, assert, it } from "./nodelikeassert.mjs"
 
-if(typeof window !== "undefined") {
-    moji = window.moji;
-}
+import { moji } from "../docs/index.mjs"
 
 describe("moji.cores", () => {
     it("toCharCode", () => {

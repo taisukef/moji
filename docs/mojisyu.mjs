@@ -14,7 +14,7 @@ function types(mObj) {
 /**
  * @type {Mojisyu}
  */
-module.exports = class Mojisyu {
+class Mojisyu {
     /**
      * @param {String} name
      * @param {Object} mObj
@@ -27,3 +27,6 @@ module.exports = class Mojisyu {
         Object.assign(this.props, mObj);
     }
 };
+
+export default Mojisyu;
+

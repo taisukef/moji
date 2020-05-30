@@ -1,11 +1,11 @@
-const map = require("./core.map");
+import { map } from "./core.map.mjs";
 
 /**
  * @param {string} str
  * @param {Mojisyu} rejectMojisyu
  * @return {string}
  */
-module.exports = function reject(str, rejectMojisyu) {
+export const reject = function (str, rejectMojisyu) {
     if (rejectMojisyu.types.range) {
         str = rangeReject(str, rejectMojisyu);
     }

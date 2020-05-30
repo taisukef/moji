@@ -1,39 +1,33 @@
-Moji.js [![npm version](https://badge.fury.io/js/moji.svg)](http://badge.fury.io/js/moji)
+Moji.mjs
 =========================================================================================
 
-JavaScriptで、半角英数↔全角英数、半角カナ↔全角カナ、ひらがな↔カタカナ変換等をあつかうライブラリ
-
-## 注意
-githubはversion1になっていますが、npmはver0.5系のままですので、ご注意ください。
-最終確認後、npmもversion1にあげます。
+JavaScriptで、半角英数↔全角英数、半角カナ↔全角カナ、ひらがな↔カタカナ変換等をあつかうESモジュール  
 
 インストール
 ------------
 
 ### ブラウザ
 
-[ダウンロード](https://github.com/niwaringo/moji/releases/download/V1.2.0/moji.js)
+[import](https://taisukef.github.io/moji/index.mjs)
 
 ```javascript
-<script src="/path/to/script/moji.js"></script>
-<script>
-$("hoge input")
-  .val(new Moji($("hoge input").val()).convert("ZE", "HE").toString());
+<script type="module">
+import { moji } from "https://taisukef.github.io/moji/index.mjs";
+
+console.log(moji("ABC").convert('ZE', 'HE'))
 </script>
 ```
 
-### npm & require
-
-```bash
-//npm
-npm i moji
-
-// yarn
-yarn add moji
-```
+### Deno
 
 ```javascript
-const moji = require("moji");
+import { moji } from "https://taisukef.github.io/moji/index.mjs";
+
+console.log(moji("ABC").convert('ZE', 'HE'))
+```
+
+```bash
+deno run test.mjs
 ```
 
 使い方
@@ -202,7 +196,8 @@ moji.addMojisyu({"HK", {
 感謝
 ----
 
-[FHconverter.js](http://distraid.co.jp/demo/js_codeconv.html)を多く参考させて頂いています。
+[moji.js](https://github.com/niwaringo/moji)をESモジュール対応しました。  
+[FHconverter.js](http://distraid.co.jp/demo/js_codeconv.html)を多く参考させて頂いています。  
 
 ライセンス
 ----------

@@ -1,7 +1,7 @@
-/* globals describe, it */
-const assert = require("assert");
-const Mojisyu = require("../src/mojisyu");
-const defaultMojisyu = require("../src/default_mojisyu");
+import { describe, assert, it } from "./nodelikeassert.mjs"
+
+import Mojisyu from "../docs/mojisyu.mjs"
+import defaultMojisyu from "../docs/default_mojisyu.mjs"
 
 describe("Mojisyu", () => {
     const mZE = new Mojisyu("ZE", defaultMojisyu.ZE);

@@ -1,8 +1,8 @@
-const Moji = require("./moji");
-const defaultMojisyu = require("./default_mojisyu");
-const Mojisyu = require("./mojisyu");
-let mojisyu = {};
+import Moji from "./moji.mjs";
+import defaultMojisyu from "./default_mojisyu.mjs";
+import Mojisyu from "./mojisyu.mjs";
 
+const mojisyu = {};
 
 /**
  * @param {string} str
@@ -25,4 +25,4 @@ moji.addMojisyu(defaultMojisyu);
  * @param {String} str
  * @return {Moji}
  */
-module.exports = moji;
+export { moji }

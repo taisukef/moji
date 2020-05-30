@@ -1,9 +1,9 @@
-const core = require("./core");
+import { core } from "./core.mjs";
 
 /**
  * @type {Moji}
  */
-module.exports = class Moji {
+class Moji {
     /**
      * @param {String} str
      * @param {Object} mojisyu
@@ -78,3 +78,5 @@ module.exports = class Moji {
         return this;
     }
 };
+
+export default Moji;

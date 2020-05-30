@@ -1,4 +1,4 @@
-module.exports = {
+const map = {
     /**
      * @param {string} str
      * @param {number} startCode
@@ -27,3 +27,5 @@ module.exports = {
         });
     },
 };
+
+export { map }
