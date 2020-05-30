@@ -2,7 +2,7 @@ Moji.mjs
 =========================================================================================
 
 JavaScriptで、半角英数↔全角英数、半角カナ↔全角カナ、ひらがな↔カタカナ変換等をあつかうESモジュール  
-forked from (Moji.js)[https://github.com/niwaringo/moji]  
+forked from [Moji.js](https://github.com/niwaringo/moji)  
 
 インストール
 ------------
